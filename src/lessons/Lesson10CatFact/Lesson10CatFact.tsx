@@ -3,6 +3,7 @@ import axios from "axios";
 
 import {
   ButtonWrapper,
+  ErrorMessageDiv,
   FactAndRemoveFactButtonWrapperDiv,
   FactCard,
   Facts,
@@ -96,7 +97,7 @@ function Lesson10CatFact() {
           {!isArrayEmpty && (
             <Facts>
               <RemoveAllButton onClick={() => onRemoveAllFacts}/>
-              {error && <p>{error}</p>}
+              {error && <ErrorMessageDiv>{error}</ErrorMessageDiv>}
               <StyledUl>
                 {factsObj.map((factsObjItem) => (
                   <FactAndRemoveFactButtonWrapperDiv key={factsObjItem.id}>

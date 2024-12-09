@@ -75,6 +75,17 @@ export const Facts = styled.div`
   max-height: 700px;
   /* border: 2px solid green; */
 `;
+export const ErrorMessageDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 20px bold #222;
+  min-width: 400px;
+  width: fit-content;
+  min-height: 200px;
+  height: fit-content;
+  background-color: orangered;
+`;
 
 export const StyledUl = styled.ul`
   display: flex;
