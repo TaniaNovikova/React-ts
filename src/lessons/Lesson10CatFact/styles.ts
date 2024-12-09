@@ -133,12 +133,9 @@ export const GetFactButton = styled.button`
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  color: rgb(43, 41, 41);
-  color: #fbfef9;
-  color: #fff;
+  color: #fff; 
   text-shadow: 0 2px 4px black;
   font-weight: bold;
-
   box-shadow: 0 4px 8px lightgray;
   cursor: pointer;
   background: url(${backgrButtonMoonImage});
