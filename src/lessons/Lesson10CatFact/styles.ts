@@ -70,9 +70,7 @@ export const Facts = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0;
-  height: fit-content;
-  /* width:650px; */
-  max-height: 700px;
+  max-height: 768px;
   /* border: 2px solid green; */
 `;
 export const ErrorMessageDiv = styled.div`
