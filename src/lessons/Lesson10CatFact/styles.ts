@@ -3,8 +3,6 @@ import backgroundCatImage from "assets/kot-na-dereve1.jpg";
 import backgrButtonMoonImage from "assets/moon2.jpg";
 import backgrMoonImage from "assets/moon1.jpg";
 
-
-
 export const FactCard = styled.form`
   display: flex;
   flex-direction: column;
@@ -29,7 +27,7 @@ export const StyledHeaderDiv = styled.div`
   height: 250px;
   /* border: 3px solid #fff; */
   color: #fff;
-padding: 0 30px;
+  padding: 0 30px;
 `;
 
 export const StyledDivBlock = styled.div`
@@ -133,7 +131,7 @@ export const GetFactButton = styled.button`
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  color: #fff; 
+  color: #fff;
   text-shadow: 0 2px 4px black;
   font-weight: bold;
   box-shadow: 0 4px 8px lightgray;
@@ -142,4 +140,5 @@ export const GetFactButton = styled.button`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 5px;
 `;

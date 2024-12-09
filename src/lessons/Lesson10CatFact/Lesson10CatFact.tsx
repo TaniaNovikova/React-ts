@@ -24,7 +24,6 @@ function Lesson10CatFact() {
   const [error, setError] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isArrayEmpty, SetIsArrayEmpty] = useState<boolean>(true);
-  const [facts, setFacts] = useState<string[]>([]);
   const [factsObj, setFactsObj] = useState<CatFactObj[]>([]);
 
   const RANDOM_FACT_URL: string = "https://catfact.ninja/fact";
@@ -34,7 +33,6 @@ function Lesson10CatFact() {
     try {
       setIsLoading(true);
       const response = await axios.get(RANDOM_FACT_URL);
-      setFacts([...facts, response.data.fact]);
       const newFactObj = {
         catFact: response.data.fact,
         id: v4(),
@@ -68,9 +66,8 @@ function Lesson10CatFact() {
     SetIsArrayEmpty(true);
   }
 
-  useEffect(() => {
-    setFacts(facts);
-  }, [facts]);
+  
+  useEffect(()=>{setFactsObj(factsObj)}, [factsObj]);
 
   return (
       <FactCard>
