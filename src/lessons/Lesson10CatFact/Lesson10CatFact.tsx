@@ -18,8 +18,8 @@ import { v4 } from "uuid";
 import CatFactLiComponent from "./CatFactComponents/CatFactLiComponent/CatFactLiComponent";
 import SpinnerMoon from "./CatFactComponents/SpinnerMoon/SpinnerMoon";
 import { CatFactObj } from "./types";
-import RemoveButtonComponent from "./CatFactComponents/RemoveButtonComponent/RemoveButtonComponent";
 import RemoveAllButton from "./CatFactComponents/RemoveAllButton/RemoveAllButton";
+import RemoveFactButton from "./CatFactComponents/RemoveFactButton/RemoveFactButton";
 
 function Lesson10CatFact() {
   const [error, setError] = useState<string>("");
@@ -49,15 +49,27 @@ function Lesson10CatFact() {
     getCatFact();
   };
 
-  function removeFact(id: string) {
+  const onRemoveFact = (id: string) => {
     setFactsObj(factsObj.filter((factsObjItem) => factsObjItem.id !== id));
-  }
+  };
 
-  function onRemoveAllFacts() {
+  const onRemoveAllFacts = () => {
     setFactsObj([]);
-  }
+  };
 
-  const RenderFacts: boolean = factsObj.length || error ? true : false;
+  const liMap= factsObj.map((factsObjItem) => (
+    <FactAndRemoveFactButtonWrapperDiv key={factsObjItem.id}>
+      <RemoveFactButton
+        onClick={() => onRemoveFact(factsObjItem.id)}                />
+      <CatFactLiComponent
+        catFact={factsObjItem.catFact}
+        id={factsObjItem.id}
+      />
+    </FactAndRemoveFactButtonWrapperDiv>
+  ))
+
+
+  const renderFacts: boolean = factsObj.length || error ? true : false;
 
   useEffect(() => {
     setFactsObj(factsObj);
@@ -69,10 +81,7 @@ function Lesson10CatFact() {
         <ButtonWrapper>
           {isLoading && <SpinnerMoon />}
           {!isLoading && (
-            <GetFactButton
-              type="submit"
-              onClick={onGetMoreInfoClick}
-            >
+            <GetFactButton type="submit" onClick={onGetMoreInfoClick}>
               GET MORE INFO
             </GetFactButton>
           )}
@@ -86,22 +95,22 @@ function Lesson10CatFact() {
           </StyledBoxForAnimationtDiv>
         </StyledDivBlock>
       </StyledHeaderDiv>
-      {RenderFacts && (
+      {renderFacts && (
         <Facts>
-          <RemoveAllButton onClick={() => onRemoveAllFacts} />
+          <RemoveAllButton onClick={onRemoveAllFacts} />
           {error && <ErrorMessageDiv>{error}</ErrorMessageDiv>}
           <StyledUl>
-            {factsObj.map((factsObjItem) => (
+            {/* {factsObj.map((factsObjItem) => (
               <FactAndRemoveFactButtonWrapperDiv key={factsObjItem.id}>
-                <RemoveButtonComponent
-                  onClick={() => removeFact(factsObjItem.id)}
-                />
+                <RemoveFactButton
+                  onClick={() => onRemoveFact(factsObjItem.id)}                />
                 <CatFactLiComponent
                   catFact={factsObjItem.catFact}
                   id={factsObjItem.id}
                 />
               </FactAndRemoveFactButtonWrapperDiv>
-            ))}
+            ))} */}
+            {liMap}
           </StyledUl>
         </Facts>
       )}

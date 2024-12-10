@@ -1,4 +1,3 @@
-// import "./styles.css";
 import { RemoveButton } from "./styles";
 import { ButtonProps } from "./types";
 

@@ -1,8 +1,8 @@
-// import "./styles.css";
 import { RemoveButton } from "./styles";
 import { ButtonProps } from "./types";
+ 
 
-function RemoveButtonComponent({ onClick }: ButtonProps) {
+function RemoveFactButton({ onClick }: ButtonProps) {
 
   return (
     <>
@@ -11,4 +11,4 @@ function RemoveButtonComponent({ onClick }: ButtonProps) {
   );
 }
 
-export default RemoveButtonComponent;
+export default RemoveFactButton;
