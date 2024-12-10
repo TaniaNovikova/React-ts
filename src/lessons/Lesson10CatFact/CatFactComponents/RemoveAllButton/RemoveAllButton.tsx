@@ -6,7 +6,7 @@ function RemoveAllButton({ onClick }: ButtonProps) {
 
   return (
     <>
-      <RemoveButton onClick={onClick}>Delete all facts</RemoveButton>
+      <RemoveButton onClick={onClick}>DELETE ALL</RemoveButton>
     </>
   );
 }

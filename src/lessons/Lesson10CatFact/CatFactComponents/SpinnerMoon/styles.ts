@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import backgrButtonMoonImage from "assets/moon1.jpg";
+import backgrMoonImage from "assets/moon1.jpg";
 
 export const SpinnerMoonStyled = styled.div`
   width: 150px;
@@ -9,10 +9,8 @@ export const SpinnerMoonStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  color: rgb(43, 41, 41);
   box-shadow: 0 4px 8px lightgray;
-  background: url(${backgrButtonMoonImage});
+  background: url(${backgrMoonImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

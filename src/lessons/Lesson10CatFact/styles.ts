@@ -1,14 +1,12 @@
 import styled from "@emotion/styled";
 import backgroundCatImage from "assets/kot-na-dereve1.jpg";
 import backgrButtonMoonImage from "assets/moon2.jpg";
-import backgrMoonImage from "assets/moon1.jpg";
 
 export const FactCard = styled.form`
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
-  height: fit-content;
+  height: 768px;
   overflow-y: hidden;
   overflow-x: hidden;
   /* border: 4px solid red; */
@@ -53,7 +51,7 @@ export const StyledBoxForAnimationtDiv = styled.div`
   }
 `;
 export const RunningTextParagraph = styled.p`
-  display: inline-block; //чтобы сработал паддинг
+  display: inline-block; 
   padding: 15px;
   color: #fff;
   text-shadow: 0px 0px 8px #fff;
@@ -70,7 +68,7 @@ export const Facts = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0;
-  max-height: 768px;
+  /* max-height: 0px; */
   /* border: 2px solid green; */
 `;
 export const ErrorMessageDiv = styled.div`
@@ -96,8 +94,7 @@ export const StyledUl = styled.ul`
   font-size: 18px;
   font-weight: bold;
   color: rgb(43, 41, 41);
-  height: fit-content;
-  max-height: 700px;
+  height: 650px;
   overflow-y: auto;
   overflow-x: hidden;
   /* border: 2px solid red; */
@@ -113,7 +110,6 @@ export const FactAndRemoveFactButtonWrapperDiv = styled.div`
   color: rgb(43, 41, 41);
   padding: 0 30px;
   /* border: 3px solid; */
-  box-shadow: 0 4px 8px lightgray;
 `;
 
 export const ButtonWrapper = styled.div`
@@ -124,11 +120,7 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  color: rgb(43, 41, 41);
   box-shadow: 0 4px 8px lightgray;
-  cursor: pointer;
-  background: url(${backgrMoonImage});
 `;
 
 export const GetFactButton = styled.button`
@@ -136,18 +128,18 @@ export const GetFactButton = styled.button`
   height: 150px;
   border: none;
   border-radius: 50%;
+  border: 1px solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
   color: #fff;
-  text-shadow: 0 2px 4px black;
-  font-weight: bold;
+  text-shadow: 0 1px black;
+  font-weight: 800;
   box-shadow: 0 4px 8px lightgray;
+
   cursor: pointer;
   background: url(${backgrButtonMoonImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5px;
 `;

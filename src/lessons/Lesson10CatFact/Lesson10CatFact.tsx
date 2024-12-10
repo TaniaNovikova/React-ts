@@ -71,7 +71,6 @@ function Lesson10CatFact() {
           {!isLoading && (
             <GetFactButton
               type="submit"
-              disabled={false}
               onClick={onGetMoreInfoClick}
             >
               GET MORE INFO
