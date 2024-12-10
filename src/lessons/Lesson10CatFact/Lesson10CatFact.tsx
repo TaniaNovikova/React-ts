@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import axios from "axios";
 
 import {
@@ -57,7 +57,7 @@ function Lesson10CatFact() {
     setFactsObj([]);
   };
 
-  const liMap= factsObj.map((factsObjItem) => (
+  const liMap= factsObj.map((factsObjItem):ReactNode => (
     <FactAndRemoveFactButtonWrapperDiv key={factsObjItem.id}>
       <RemoveFactButton
         onClick={() => onRemoveFact(factsObjItem.id)}                />
