@@ -1,3 +1,5 @@
+// import Homework09 from 'homeworks/Homework09/Homework09';
+import Lesson10CatFact from 'lessons/Lesson10CatFact/Lesson10CatFact';
 import GlobalStyles from './styles/GlobalStyles';
 
 //lessons
@@ -9,7 +11,7 @@ import GlobalStyles from './styles/GlobalStyles';
 //homeworks
 // import Homework07 from './homeworks/Homework07/Homework07';
 // import Homework08 from './homeworks/Homework08/Homework08';
-import Homework09 from 'homeworks/Homework09/Homework09';
+// import Homework09 from 'homeworks/Homework09/Homework09';
 
 //consultations
 // import Consultation04 from './consultations/Consultation04/Consultation04';
@@ -28,7 +30,7 @@ function App() {
       {/* <Homework08 /> */}
       {/* <Lesson09 /> */}
       {/* <Consultation05 /> */}
-      <Homework09 />
+      <Lesson10CatFact/>
     </>
   );
 }
