@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/tanianivikova.github.io/React-ts/static/js/main.4049857e.js",
-    "static/js/453.ed3810f9.chunk.js": "/tanianivikova.github.io/React-ts/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/tanianivikova.github.io/React-ts/index.html",
-    "main.4049857e.js.map": "/tanianivikova.github.io/React-ts/static/js/main.4049857e.js.map",
-    "453.ed3810f9.chunk.js.map": "/tanianivikova.github.io/React-ts/static/js/453.ed3810f9.chunk.js.map"
+    "main.js": "/React-ts/static/js/main.f7b7cf2a.js",
+    "static/js/453.ed3810f9.chunk.js": "/React-ts/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/React-ts/index.html",
+    "main.f7b7cf2a.js.map": "/React-ts/static/js/main.f7b7cf2a.js.map",
+    "453.ed3810f9.chunk.js.map": "/React-ts/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4049857e.js"
+    "static/js/main.f7b7cf2a.js"
   ]
 }
