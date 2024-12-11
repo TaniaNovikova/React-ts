@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.js": "/React-ts/static/js/main.f7b7cf2a.js",
+    "main.js": "/React-ts/static/js/main.2ce2a49b.js",
     "static/js/453.ed3810f9.chunk.js": "/React-ts/static/js/453.ed3810f9.chunk.js",
+    "static/media/kot-na-dereve1.jpg": "/React-ts/static/media/kot-na-dereve1.76d1a5f0ecc9f22689a4.jpg",
+    "static/media/moon2.jpg": "/React-ts/static/media/moon2.00ad357682d9b7adc019.jpg",
+    "static/media/moon1.jpg": "/React-ts/static/media/moon1.6631e5cc90db7602421d.jpg",
     "index.html": "/React-ts/index.html",
-    "main.f7b7cf2a.js.map": "/React-ts/static/js/main.f7b7cf2a.js.map",
+    "main.2ce2a49b.js.map": "/React-ts/static/js/main.2ce2a49b.js.map",
     "453.ed3810f9.chunk.js.map": "/React-ts/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.f7b7cf2a.js"
+    "static/js/main.2ce2a49b.js"
   ]
 }
