@@ -6,4 +6,5 @@ export const Homework11Container = styled.div`
   align-items: center;
   justify-content: center;
   flex: 1;
+  background-color: #112d49;
 `
