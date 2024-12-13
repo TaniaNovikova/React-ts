@@ -75,7 +75,7 @@ function EmployeeForm() {
 
   return (
     <EmployeeFormContainer onSubmit={formik.handleSubmit}>
-      <EmployeeFormTitle>Employee form</EmployeeFormTitle>
+      <EmployeeFormTitle>Форма служащего</EmployeeFormTitle>
       <InputsContainer>
         <Input
           name={EMPLOYEE_FORM_NAMES.FIRST_NAME}
@@ -114,7 +114,14 @@ function EmployeeForm() {
           onChange={formik.handleChange}
           error={formik.errors[EMPLOYEE_FORM_NAMES.POSITION]}
         />
-        {/* <Checkbox id="agree_id" name={EMPLOYEE_FORM_NAMES.TERMS_OF_USE} onChange={formik.handleChange} checked={false} label="Правила использования" type="checkbox"/> */}
+        {/* <Checkbox
+          id="agree_id"
+          name={EMPLOYEE_FORM_NAMES.TERMS_OF_USE}
+          onChange={formik.handleChange}
+          checked={false}
+          label="Правила использования"
+          type="checkbox"
+        /> */}
         <CheckboxContainer>
           <Checkbox
             type="checkbox"
