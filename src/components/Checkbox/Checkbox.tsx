@@ -1,4 +1,4 @@
-import { CheckboxContainer, CheckboxLabel } from "./styles";
+import { CheckboxContainer, CheckboxElement, CheckboxLabel} from "./styles";
 import { CheckboxProps } from "./types";
 
 function Checkbox({
@@ -7,17 +7,16 @@ function Checkbox({
   onChange,
   checked = false,
   label,
-  type = "checkbox",
+ type = "checkbox",
 }: CheckboxProps) {
   return (
     <CheckboxContainer>
-      <Checkbox
+      <CheckboxElement
         type={type}
         id={id}
         name={name}
         onChange={onChange}
         checked={checked}
-        label={label}
       />
       <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
     </CheckboxContainer>

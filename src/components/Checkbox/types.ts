@@ -1,8 +1,11 @@
+import { ChangeEvent } from "react";
+
 export interface CheckboxProps {
-  id: string;
   name: string;
-  onChange: any;
-  checked: boolean;
-  label: string;
+  id?: string;
   type: string;
+  label?: string;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+  checked: boolean;
+  error?: string;
 }

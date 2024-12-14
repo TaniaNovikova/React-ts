@@ -2,7 +2,7 @@
 export interface EmployeeFormValue {
   firstName: string;
   lastName: string;
-  age: string;
+  age: number;
   position: string;
   termsOfUse: boolean;
 }

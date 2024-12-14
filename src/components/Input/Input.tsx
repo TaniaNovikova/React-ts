@@ -2,7 +2,7 @@ import "./styles.ts";
 import { InputProps } from './types';
 import { ErrorMessage, InputContainer, InputElement, Label } from './styles';
 
-function Input({ name, id, type = 'text', placeholder, label, value, onChange, error }: InputProps) {
+function Input({ name, id, type = 'text', placeholder, label, value, onChange, error, min, max, step }: InputProps) {
   // console.log("Input render or re-render");
 
   return (
@@ -17,6 +17,9 @@ function Input({ name, id, type = 'text', placeholder, label, value, onChange, e
         onChange={onChange}
         placeholder={placeholder}
         className="input-element"
+        min={min}
+        max={max}
+        step={step}
       />
       <ErrorMessage>{error}</ErrorMessage>
       {/* {error && <ErrorMessage>{error}</ErrorMessage>} */}

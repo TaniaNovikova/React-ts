@@ -3,11 +3,13 @@ import { ChangeEvent } from "react";
 export interface InputProps {
   name: string;
   id?: string;
-  type?: "text" | "email" | "password" | "tel" | "number" ;
+  type?: "text" | "email" | "password" | "tel" | "number";
   placeholder?: string;
   label?: string;
-  // временно делаем пропсы value и onChange необязательными, чтобы не было ошибок в старых компонентах
-  value?: string;
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+  value?: string | number;
+  min?: number;
+  max?: number;
+  step?: number;
   error?: string;
 }
