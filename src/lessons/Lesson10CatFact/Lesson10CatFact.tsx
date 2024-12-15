@@ -57,17 +57,17 @@ function Lesson10CatFact() {
     setFactsObj([]);
   };
 
-  const liMap= factsObj.map((factsObjItem):ReactNode => (
-    <FactAndRemoveFactButtonWrapperDiv key={factsObjItem.id}>
-      <RemoveFactButton
-        onClick={() => onRemoveFact(factsObjItem.id)}                />
-      <CatFactLiComponent
-        catFact={factsObjItem.catFact}
-        id={factsObjItem.id}
-      />
-    </FactAndRemoveFactButtonWrapperDiv>
-  ))
-
+  const liMap = factsObj.map(
+    (factsObjItem): ReactNode => (
+      <FactAndRemoveFactButtonWrapperDiv key={factsObjItem.id}>
+        <RemoveFactButton onClick={() => onRemoveFact(factsObjItem.id)} />
+        <CatFactLiComponent
+          catFact={factsObjItem.catFact}
+          id={factsObjItem.id}
+        />
+      </FactAndRemoveFactButtonWrapperDiv>
+    )
+  );
 
   const renderFacts: boolean = factsObj.length || error ? true : false;
 
@@ -99,19 +99,7 @@ function Lesson10CatFact() {
         <Facts>
           <RemoveAllButton onClick={onRemoveAllFacts} />
           {error && <ErrorMessageDiv>{error}</ErrorMessageDiv>}
-          <StyledUl>
-            {/* {factsObj.map((factsObjItem) => (
-              <FactAndRemoveFactButtonWrapperDiv key={factsObjItem.id}>
-                <RemoveFactButton
-                  onClick={() => onRemoveFact(factsObjItem.id)}                />
-                <CatFactLiComponent
-                  catFact={factsObjItem.catFact}
-                  id={factsObjItem.id}
-                />
-              </FactAndRemoveFactButtonWrapperDiv>
-            ))} */}
-            {liMap}
-          </StyledUl>
+          <StyledUl>{liMap}</StyledUl>
         </Facts>
       )}
     </FactCard>
