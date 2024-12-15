@@ -11,4 +11,5 @@ export interface InputProps {
   value?: string | number;
   min?: number;
   step?: number;
+  error?: string;
 }
