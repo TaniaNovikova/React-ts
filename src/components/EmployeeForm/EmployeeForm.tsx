@@ -3,7 +3,7 @@ import * as Yup from "yup";
 
 import Input from "components/Input/Input";
 import {
-   EmployeeFormContainer,
+  EmployeeFormContainer,
   EmployeeFormTitle,
   InputsContainer,
 } from "./styles";
@@ -12,9 +12,15 @@ import Button from "components/Button/Button";
 import Checkbox from "components/Checkbox/Checkbox";
 
 function EmployeeForm() {
+  const onlyCyrillicAndHypenRegex = /^[\u0400-\u04FF\-]+$/;
+
   //создаём валидационную схему через Yup
   const shema = Yup.object().shape({
     [EMPLOYEE_FORM_NAMES.FIRST_NAME]: Yup.string()
+      .matches(
+        onlyCyrillicAndHypenRegex,
+        "Используйте кириллический шрифт для ввода текста"
+      )
       .required('Поле "Имя" является обязательным')
       .test(
         "Check value length",
@@ -27,6 +33,10 @@ function EmployeeForm() {
         (value) => value.length >= 2
       ),
     [EMPLOYEE_FORM_NAMES.LAST_NAME]: Yup.string()
+      .matches(
+        onlyCyrillicAndHypenRegex,
+        "Используйте кириллический шрифт для ввода текста"
+      )
       .required('Поле "Фамилия" является обязательным')
       .test(
         "Check value length",
@@ -43,6 +53,10 @@ function EmployeeForm() {
     // .min(18, 'Min 18'),
 
     [EMPLOYEE_FORM_NAMES.POSITION]: Yup.string()
+      .matches(
+        onlyCyrillicAndHypenRegex,
+        "Используйте кириллический шрифт для ввода текста"
+      )
       .required('Поле "Должность" является обязательным')
       .test(
         "Check value length",
@@ -73,7 +87,7 @@ function EmployeeForm() {
 
   return (
     <EmployeeFormContainer onSubmit={formik.handleSubmit}>
-      <EmployeeFormTitle>Форма служащего</EmployeeFormTitle>
+      <EmployeeFormTitle>Форма служащего компании</EmployeeFormTitle>
       <InputsContainer>
         <Input
           name={EMPLOYEE_FORM_NAMES.FIRST_NAME}
@@ -120,7 +134,7 @@ function EmployeeForm() {
           name={EMPLOYEE_FORM_NAMES.TERMS_OF_USE}
           onChange={formik.handleChange}
           checked={formik.values[EMPLOYEE_FORM_NAMES.TERMS_OF_USE]}
-          label="Правила использования"
+          label="С правилами о неразглашении внутренней информации ознакомлен"
           type="checkbox"
         />
       </InputsContainer>

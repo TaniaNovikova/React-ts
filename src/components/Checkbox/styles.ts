@@ -7,7 +7,7 @@ export const CheckboxContainer = styled.div`
 `;
 
 export const CheckboxLabel = styled.label`
-  font-size: 20px;
+  font-size: 14px;
 `;
 export const CheckboxElement = styled.input`
   width: 25px;
