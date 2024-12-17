@@ -37,9 +37,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/users" element={<Users />} />
           <Route path="/clients" element={<Clients />} />
-          <Route path="/clients/sap" element={<SAP />} />
-          <Route path="/clients/meta" element={<Meta />} />
-          <Route path="/clients/oracle" element={<Oracle />} />
+          <Route path="/sap" element={<SAP />} />
+          <Route path="/meta" element={<Meta />} />
+          <Route path="/oracle" element={<Oracle />} />
           <Route path="*" element="Page not found" />
         </Routes>
       </Layout>

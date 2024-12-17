@@ -4,9 +4,9 @@ import { ClientsContaiter, StyledLink } from "./styles";
 function Clients() {
   return (
     <ClientsContaiter>
-      <StyledLink to="/clients/sap">SAP</StyledLink>
-      <StyledLink to="/clients/meta">Meta</StyledLink>
-      <StyledLink to="/clients/oracle">Oracle</StyledLink>
+      <StyledLink to="/sap">SAP</StyledLink>
+      <StyledLink to="/meta">Meta</StyledLink>
+      <StyledLink to="/oracle">Oracle</StyledLink>
 
     </ClientsContaiter>
   );
