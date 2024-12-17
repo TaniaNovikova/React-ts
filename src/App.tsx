@@ -9,6 +9,7 @@ import Clients from "pages/Clients/Clients";
 import SAP from "pages/Clients/components/SAP/SAP";
 import Meta from "pages/Clients/components/Meta/Meta";
 import Oracle from "pages/Clients/components/Oracle/Oracle";
+import Lesson13 from "lessons/Lesson13/Lesson13";
 
 //lessons
 // import Lesson06 from './lessons/Lesson06/Lesson06';
@@ -31,7 +32,7 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Layout>
+      {/* <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -42,7 +43,7 @@ function App() {
           <Route path="/oracle" element={<Oracle />} />
           <Route path="*" element="Page not found" />
         </Routes>
-      </Layout>
+      </Layout> */}
       {/* <Lesson06 /> */}
       {/* <Lesson07 /> */}
       {/* <Consultation04 /> */}
@@ -54,6 +55,7 @@ function App() {
       {/* <Homework09 /> */}
       {/* <Lesson11 /> */}
       {/* <Homework11 /> */}
+      <Lesson13/>
     </BrowserRouter>
   );
 }
