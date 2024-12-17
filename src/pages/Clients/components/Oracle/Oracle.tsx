@@ -1,5 +1,5 @@
-import CompanyInfo from "components/CompanyInfo/CompanyInfo";
-import { companyItems } from "components/CompanyInfo/data";
+import CompanyInfo from "pages/Clients/components/CompanyInfo/CompanyInfo";
+import { companyItems } from "pages/Clients/components/CompanyInfo/data";
 
 
 function Oracle() {
