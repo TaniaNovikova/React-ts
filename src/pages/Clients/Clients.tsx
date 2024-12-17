@@ -7,7 +7,6 @@ function Clients() {
       <StyledLink to="/sap">SAP</StyledLink>
       <StyledLink to="/meta">Meta</StyledLink>
       <StyledLink to="/oracle">Oracle</StyledLink>
-
     </ClientsContaiter>
   );
 }

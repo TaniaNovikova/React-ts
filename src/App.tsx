@@ -6,9 +6,9 @@ import About from "pages/About/About";
 import Home from "pages/Home/Home";
 import Users from "pages/Users/Users";
 import Clients from "pages/Clients/Clients";
-import SAP from "pages/SAP/SAP";
-import Meta from "pages/Meta/Meta";
-import Oracle from "pages/Oracle/Oracle";
+import SAP from "pages/Clients/components/SAP/SAP";
+import Meta from "pages/Clients/components/Meta/Meta";
+import Oracle from "pages/Clients/components/Oracle/Oracle";
 
 //lessons
 // import Lesson06 from './lessons/Lesson06/Lesson06';
