@@ -1,10 +1,14 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import GlobalStyles from './styles/GlobalStyles';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import GlobalStyles from "./styles/GlobalStyles";
 
-import Layout from 'components/Layout/Layout';
-import About from 'pages/About/About';
-import Home from 'pages/Home/Home';
-import Users from 'pages/Users/Users';
+import Layout from "components/Layout/Layout";
+import About from "pages/About/About";
+import Home from "pages/Home/Home";
+import Users from "pages/Users/Users";
+import Clients from "pages/Clients/Clients";
+import SAP from "pages/SAP/SAP";
+import Meta from "pages/Meta/Meta";
+import Oracle from "pages/Oracle/Oracle";
 
 //lessons
 // import Lesson06 from './lessons/Lesson06/Lesson06';
@@ -23,17 +27,20 @@ import Users from 'pages/Users/Users';
 // import Consultation04 from './consultations/Consultation04/Consultation04';
 // import Consultation05 from 'consultations/Consultation05/Consultation05';
 
-
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
       <Layout>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/users' element={<Users />} />
-          <Route path='*' element='Page not found' />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/sap" element={<SAP />} />
+          <Route path="/clients/meta" element={<Meta />} />
+          <Route path="/clients/oracle" element={<Oracle />} />
+          <Route path="*" element="Page not found" />
         </Routes>
       </Layout>
       {/* <Lesson06 /> */}
