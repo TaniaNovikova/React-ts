@@ -5,6 +5,7 @@ import GlobalStyles from './styles/GlobalStyles';
 import About from 'pages/About/About';
 import Home from 'pages/Home/Home';
 import Users from 'pages/Users/Users';
+import HW13useContext from 'homeworks/HW13useContext/HW13useContext';
 
 //lessons
 // import Lesson06 from './lessons/Lesson06/Lesson06';
@@ -28,14 +29,14 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Layout>
+      {/* <Layout>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/users' element={<Users />} />
           <Route path='*' element='Page not found' />
         </Routes>
-      </Layout>
+      </Layout> */}
       {/* <Lesson06 /> */}
       {/* <Lesson07 /> */}
       {/* <Consultation04 /> */}
@@ -47,6 +48,7 @@ function App() {
       {/* <Homework09 /> */}
       {/* <Lesson11 /> */}
       {/* <Homework11 /> */}
+      <HW13useContext/>
     </BrowserRouter>
   );
 }
