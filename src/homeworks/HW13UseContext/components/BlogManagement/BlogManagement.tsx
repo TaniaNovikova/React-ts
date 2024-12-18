@@ -1,9 +1,10 @@
 import { ChangeEvent, useState, createContext } from "react";
 
 import Button from "components/Button/Button";
-import Card from "../Card/Card";
 
-import { BlogManagementWrapper, BlogManagementTextArea, TextareaWrapper } from "./styles";
+import { BlogManagementWrapper } from "./styles";
+import Card from "../Card/Card";
+import Textarea from "components/Textarea/Textarea";
 
 export const BlogManagementContext = createContext<string>("");
 
@@ -23,15 +24,13 @@ function BlogManagement() {
   return (
     <BlogManagementContext.Provider value={message}>
       <BlogManagementWrapper>
-        <TextareaWrapper>
-        <label htmlFor="message-textarea">Message</label>
-        <BlogManagementTextArea
-          id="message-textarea"
-          name="message-textarea"
-          placeholder="Enter your message"
+        <Textarea
+          id={"message-textarea"}
+          name={"message-textarea"}
+          placeholder={"Enter your message"}
           onChange={onChangeTextarea}
+          label={"Message"}
         />
-        </TextareaWrapper>
         <Button name="Post" onClick={postMessage} />
 
         <Card />
