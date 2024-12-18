@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom"
 
 import Button from "components/Button/Button"
 import { UsersPage } from "./styles"
+import { useEffect } from "react";
 
 function Users() {
   //хук useNavigate возвращает функцию, при вызове которой нас может перенаправить на указанный url
@@ -10,6 +11,14 @@ function Users() {
   const goToAboutPage = () => {
     navigate('/about')
   }
+
+    //пример useEffect при размонтировании компонента Users
+    useEffect(() => {
+      return () => {
+        console.log('Component Users unmounting');
+      }
+    }, [])
+  
 
   return (
     <UsersPage>
