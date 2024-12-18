@@ -10,6 +10,7 @@ function Meta() {
       LogoImgSrc={companyItem.LogoImgSrc}
       LogoHref={companyItem.LogoHref}
       CompanyTextInfo={companyItem.CompanyTextInfo}
+      id={companyItem.id}
     />
   );
 }

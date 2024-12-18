@@ -1,9 +1,11 @@
 import metaLogo from "assets/Meta-Logo (1).png";
 import oracleLogo from "assets/Oracle_logo.svg.png";
 import SAPLogo from "assets/SAP-Logo.svg.png";
+import { v4 } from "uuid";
 
 export const companyItems = [
   {
+    id: v4(),
     CompanyName: "SAP",
     LogoImgSrc: SAPLogo,
     LogoHref: "https://www.sap.com/index.html",
@@ -21,6 +23,7 @@ export const companyItems = [
         Logo und besuchen Sie die offizielle Website von SAP.`,
   },
   {
+    id: v4(),
     CompanyName: "Oracle",
     LogoImgSrc: oracleLogo,
     LogoHref: "https://www.oracle.com",
@@ -29,11 +32,11 @@ export const companyItems = [
               Das Unternehmen bietet eine breite Palette von Produkten, darunter relationale Datenbanken, ERP-Systeme, und Cloud-Services wie Oracle Cloud Infrastructure (OCI). Oracle unterstützt Unternehmen jeder Größe bei der Digitalisierung und hilft, Geschäftsprozesse effizienter und intelligenter zu gestalten.
               
               Mit einer globalen Präsenz in über 175 Ländern setzt Oracle auf modernste Technologien wie Künstliche Intelligenz, Machine Learning und Blockchain, um seinen Kunden Wettbewerbsvorteile zu verschaffen.
-              
-              
+             
           `,
   },
   {
+    id: v4(),
     CompanyName: "Meta",
     LogoImgSrc: metaLogo,
     LogoHref: "https://www.meta.com",

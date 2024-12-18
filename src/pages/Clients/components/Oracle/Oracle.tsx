@@ -9,8 +9,7 @@ function Oracle() {
       CompanyName={companyItem.CompanyName}
       LogoImgSrc={companyItem.LogoImgSrc}
       LogoHref={companyItem.LogoHref}
-      CompanyTextInfo={companyItem.CompanyTextInfo}
-    />
+      CompanyTextInfo={companyItem.CompanyTextInfo} id={companyItem.id}    />
   );
 }
 
