@@ -1,15 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import GlobalStyles from "./styles/GlobalStyles";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Layout from "components/Layout/Layout";
-import About from "pages/About/About";
-import Home from "pages/Home/Home";
-import Users from "pages/Users/Users";
-import Clients from "pages/Clients/Clients";
-import SAP from "pages/Clients/components/SAP/SAP";
-import Meta from "pages/Clients/components/Meta/Meta";
-import Oracle from "pages/Clients/components/Oracle/Oracle";
-import Lesson13 from "lessons/Lesson13/Lesson13";
+import Layout from 'components/Layout/Layout';
+import GlobalStyles from './styles/GlobalStyles';
+import About from 'pages/About/About';
+import Home from 'pages/Home/Home';
+import Users from 'pages/Users/Users';
 
 //lessons
 // import Lesson06 from './lessons/Lesson06/Lesson06';
@@ -28,22 +23,19 @@ import Lesson13 from "lessons/Lesson13/Lesson13";
 // import Consultation04 from './consultations/Consultation04/Consultation04';
 // import Consultation05 from 'consultations/Consultation05/Consultation05';
 
+
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      {/* <Layout>
+      <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/clients" element={<Clients />} />
-          <Route path="/sap" element={<SAP />} />
-          <Route path="/meta" element={<Meta />} />
-          <Route path="/oracle" element={<Oracle />} />
-          <Route path="*" element="Page not found" />
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/users' element={<Users />} />
+          <Route path='*' element='Page not found' />
         </Routes>
-      </Layout> */}
+      </Layout>
       {/* <Lesson06 /> */}
       {/* <Lesson07 /> */}
       {/* <Consultation04 /> */}
@@ -55,7 +47,6 @@ function App() {
       {/* <Homework09 /> */}
       {/* <Lesson11 /> */}
       {/* <Homework11 /> */}
-      <Lesson13/>
     </BrowserRouter>
   );
 }
