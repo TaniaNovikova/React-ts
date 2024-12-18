@@ -1,10 +1,13 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Meta } from "react-router-dom";
 
-import Layout from 'components/Layout/Layout';
-import GlobalStyles from './styles/GlobalStyles';
-import About from 'pages/About/About';
-import Home from 'pages/Home/Home';
-import Users from 'pages/Users/Users';
+import Layout from "components/Layout/Layout";
+import GlobalStyles from "./styles/GlobalStyles";
+import About from "pages/About/About";
+import Home from "pages/Home/Home";
+import Users from "pages/Users/Users";
+import Clients from "pages/Clients/Clients";
+import SAP from "pages/Clients/components/SAP/SAP";
+import Oracle from "pages/Clients/components/Oracle/Oracle";
 
 //lessons
 // import Lesson06 from './lessons/Lesson06/Lesson06';
@@ -18,24 +21,29 @@ import Users from 'pages/Users/Users';
 // import Homework08 from './homeworks/Homework08/Homework08';
 // import Homework09 from 'homeworks/Homework09/Homework09';
 // import Homework11 from 'homeworks/Homework11/Homework11';
+import HW13useContext from "homeworks/HW13useContext/HW13useContext";
+
 
 //consultations
 // import Consultation04 from './consultations/Consultation04/Consultation04';
 // import Consultation05 from 'consultations/Consultation05/Consultation05';
 
-
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Layout>
+       {/* <Layout>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/users' element={<Users />} />
-          <Route path='*' element='Page not found' />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/sap" element={<SAP />} />
+          <Route path="/meta" element={<Meta />} />
+          <Route path="/oracle" element={<Oracle />} />
+          <Route path="*" element="Page not found" />
         </Routes>
-      </Layout>
+      </Layout> */}
       {/* <Lesson06 /> */}
       {/* <Lesson07 /> */}
       {/* <Consultation04 /> */}
@@ -47,6 +55,7 @@ function App() {
       {/* <Homework09 /> */}
       {/* <Lesson11 /> */}
       {/* <Homework11 /> */}
+      <HW13useContext/>
     </BrowserRouter>
   );
 }
