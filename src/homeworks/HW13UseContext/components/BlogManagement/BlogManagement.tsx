@@ -32,7 +32,7 @@ function BlogManagement() {
           onChange={onChangeTextarea}
         />
         </TextareaWrapper>
-        <Button name="Запостить" onClick={postMessage} />
+        <Button name="Post" onClick={postMessage} />
 
         <Card />
       </BlogManagementWrapper>

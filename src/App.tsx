@@ -21,7 +21,7 @@ import Oracle from "pages/Clients/components/Oracle/Oracle";
 // import Homework08 from './homeworks/Homework08/Homework08';
 // import Homework09 from 'homeworks/Homework09/Homework09';
 // import Homework11 from 'homeworks/Homework11/Homework11';
-import HW13UseContext from "homeworks/HW13UseContext/HW13UseContext";
+import HW13useContext from "homeworks/HW13useContext/HW13useContext";
 
 
 //consultations
@@ -55,7 +55,7 @@ function App() {
       {/* <Homework09 /> */}
       {/* <Lesson11 /> */}
       {/* <Homework11 /> */}
-      <HW13UseContext/>
+      <HW13useContext/>
     </BrowserRouter>
   );
 }

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { MessageWrapper, MessageInfo, MessageTitle } from "./styles";
+import { MessageWrapper, MessageInfo} from "./styles";
 import { BlogManagementContext } from "../BlogManagement/BlogManagement";
 
 function Message() {
@@ -8,7 +8,6 @@ function Message() {
 
   return (
     <MessageWrapper>
-      <MessageTitle>Message: </MessageTitle>
       <MessageInfo>{message}</MessageInfo>
     </MessageWrapper>
   );

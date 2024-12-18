@@ -7,13 +7,14 @@ export const CardWrapper = styled.div`
   max-height: fit-content;
   flex: 1;
   padding: 20px;
-  background-color: #8e6464;
+  background-color: rgb(255, 255, 255, 0.4);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   gap: 8px;
 `;
 
 export const CardTitle = styled.p`
   font-size: 20px;
-  font-weight: bold;
-  color: wheat;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 `;

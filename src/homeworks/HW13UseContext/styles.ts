@@ -7,5 +7,5 @@ export const PageWrapper = styled.div`
   padding: 10px;
   align-items: center;
   justify-content: center;
-  background-color: #112d49;
+  background-color: #0a0d21;
 `;
